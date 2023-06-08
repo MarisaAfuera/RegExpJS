@@ -1,0 +1,9 @@
+let patr = /blanco|azul/g; 
+let cadena = "Coche blanco";
+console.log (patr.test(cadena)); // true
+cadena = "Coche azul";
+console.log (patr.test(cadena)); // true
+cadena = "Coche rojo";
+console.log (patr.test(cadena)); // false
+cadena = "Coche blanco y coche azul";
+console.log (cadena.match(patr)); // [blanco]
