@@ -1,5 +1,5 @@
-// Objeto String: El método exec() realiza una búsqueda para encontrar el patrón dentro de una cadena de caracteres 
-// y devuelve un array con los resultados. Sino hay coincidencias devuelve null.
+// Objeto String: El método match() realiza una búsqueda para encontrar el patrón dentro de una cadena de 
+// caracteres y devuelve un array con los resultados. Sino hay coincidencias devuelve null.
 let patr = /capítulo \d/g;
 let cadena = "capítulo 1";
 console.log("Primer ejemplo con flag g");
@@ -10,7 +10,7 @@ console.log("");
 //
 // Objeto String: el método match devuelve un array con la primera coincidencia encontrada. Con el flag "g"
 // devuelve todas las coincidencias
-patr = /casa/; // /(?<g1>casa)/
+patr = /(?<g1>casa)/; // /(?<g1>casa)/ /casa/
 cadena = "Una casa, dos casas, tres casas";
 console.log("Segundo ejemplo sin flag g");
 console.log("El resultado es: ", cadena.match(patr));

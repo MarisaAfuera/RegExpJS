@@ -3,7 +3,7 @@
 // normalmente no lo muestran como tal sino que lo interpretan como una orden, en este caso 
 // que el caracter siguiente se muestre más a la derecha.
 
-let patr = /[\t]/; 
+let patr = /\t/; 
 let cadena = "Este texto no lleva tabulador";
 console.log (patr.test(cadena)); // false
 cadena = "Este  	texto si lleva tabulador"; // no se ve pero está
